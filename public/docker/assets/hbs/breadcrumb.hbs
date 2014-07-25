@@ -1,0 +1,9 @@
+{{#each cols}} 
+	<li>
+		{{#if url}}
+		<a href="{{url}}">{{title}}</a>
+		{{else}}
+			<span>{{title}}</span>
+		{{/if}}
+	</li>
+{{/each}}

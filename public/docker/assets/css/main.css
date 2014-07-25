@@ -1,0 +1,75 @@
+#environment-select-dropdown {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+#environment-select-dropdown span {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+#environment-select-dropdown span.glyphicon {
+    color: #4682b4;
+}
+
+
+#environment-select-dropdown a {
+    color: #708090;
+    text-decoration: none;
+}
+
+#compare-version-dropdown span {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+#compare-version-dropdown span.glyphicon {
+    color: #4682b4;
+}
+
+
+#compare-version-dropdown a {
+    color: #708090;
+    text-decoration: none;
+}
+
+h1 .glyphicon,
+h2 .glyphicon,
+h3 .glyphicon,
+h4 .glyphicon
+{
+    padding-right: 0.5em;
+}
+
+.navbar {
+}
+
+.navbar-brand {
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+.badge {
+    /*background-color: #87ceeb;*/
+    background-color: #95a578;
+}
+
+.pannel {
+    border-style: none;
+}
+
+.table {
+    width: 100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+ul.images li span {
+	font-weight: bold;
+}
+
+.revision {
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+}

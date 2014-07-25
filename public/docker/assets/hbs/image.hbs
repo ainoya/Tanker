@@ -1,0 +1,90 @@
+<div>
+<ul class="list-group images">
+  <li class="list-group-item"><span>ID</span> : {{id}}</li>
+  <li class="list-group-item"><span>PARENT</span> : <a href="#" class="image_link">{{parent}}</a></li>
+  <li class="list-group-item"><span>CREATED</span> : {{formatDate created "YYYY/MM/DD HH:mm"}}</li>
+  <li class="list-group-item"><span>CONTAINER</span> : {{container}}</li>
+  <li class="list-group-item"><span>DOCKER_VERSION</span> : {{docker_version}}</li>
+  <li class="list-group-item"><span>ARCHITECTURE</span> : {{architecture}}</li>
+  <li class="list-group-item"><span>OS</span> : {{os}}</li>
+  <li class="list-group-item"><span>SIZE</span> : {{Size}}</li>
+</ul>
+
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><a href="#config" data-toggle="tab">Config</a></li>
+  <li><a href="#container" data-toggle="tab">Container Config</a></li>
+</ul>
+
+<div class="tab-content">
+<div class="tab-pane active" id="config"> 
+<br/>
+<ul class="list-group images">
+  <li class="list-group-item"><span>HOSTNAME</span> : {{config.Hostname}}</li>
+  <li class="list-group-item"><span>DOMAIN_NAME</span> : {{config.Domainame}}</li>
+  <li class="list-group-item"><span>USER</span> : {{config.User}}</li>
+  <li class="list-group-item"><span>MEMORY</span> : {{config.Memory}}</li>
+  <li class="list-group-item"><span>MEMORY_SWAP</span> : {{config.MemorySwap}}</li>
+  <li class="list-group-item"><span>CPU_SHARES</span> : {{config.CpuShares}}</li>
+  <li class="list-group-item"><span>ATTACH_STDIN</span> : {{config.AttachStdin}}</li>
+  <li class="list-group-item"><span>PORT_SPECS</span> : {{config.PortSpecs}}</li>
+  <li class="list-group-item"><span>EXPOSED_PORTS</span>: 
+		{{#each config.ExposedPorts}}
+			{{@key}} &nbsp &nbsp 
+		{{/each}}
+  </li>
+  <li class="list-group-item"><span>TTY</span> : {{config.Tty}}</li>
+  <li class="list-group-item"><span>OPEN_STDIN</span> : {{config.OpenStdin}}</li>
+  <li class="list-group-item"><span>STDIN_ONCE</span> : {{config.StdinOnce}}</li>
+  <li class="list-group-item"><span>ENV</span> : {{config.Env}}</li>
+  <li class="list-group-item"><span>CMD</span> : {{config.Cmd}}</li>
+  <li class="list-group-item"><span>DNS</span> : {{config.Dns}}</li>
+  <li class="list-group-item"><span>IMAGE</span> : {{config.Image}}</li>
+  <li class="list-group-item"><span>VOLUMES</span> : 
+		{{#each config.Volumes}}
+			{{@key}} &nbsp &nbsp
+		{{/each}}
+  </li>
+  <li class="list-group-item"><span>VOLUMES_FROM</span> : {{config.VolumesFrom}}</li>
+  <li class="list-group-item"><span>WORKING_DIR</span> : {{config.WorkingDir}}</li>
+  <li class="list-group-item"><span>ENTRYPOINT</span> : {{config.EntryPoint}}</li>
+  <li class="list-group-item"><span>NETWORK_DISABLED</span> : {{config.NetworkDisabled}}</li>
+  <li class="list-group-item"><span>ON_BUILD</span> : {{config.OnBuild}}</li>
+<ul>
+</div>
+
+<div class="tab-pane" id="container">
+<br/>	
+<ul class="list-group images">
+  <li class="list-group-item"><span>HOSTNAME</span> : {{container_config.Hostname}}</li>
+  <li class="list-group-item"><span>DOMAIN_NAME</span> : {{container_config.Domainame}}</li>
+  <li class="list-group-item"><span>USER</span> : {{container_config.User}}</li>
+  <li class="list-group-item"><span>MEMORY</span> : {{container_config.Memory}}</li>
+  <li class="list-group-item"><span>MEMORY_SWAP</span> : {{container_config.MemorySwap}}</li>
+  <li class="list-group-item"><span>CPU_SHARES</span> : {{container_config.CpuShares}}</li>
+  <li class="list-group-item"><span>ATTACH_STDIN</span> : {{container_config.AttachStdin}}</li>
+  <li class="list-group-item"><span>PORT_SPECS</span> : {{container_config.PortSpecs}}</li>
+  <li class="list-group-item"><span>EXPOSED_PORTS</span>: 
+		{{#each container_config.ExposedPorts}}
+			{{@key}} &nbsp &nbsp 
+		{{/each}}
+  </li>
+  <li class="list-group-item"><span>TTY</span> : {{container_config.Tty}}</li>
+  <li class="list-group-item"><span>OPEN_STDIN</span> : {{container_config.OpenStdin}}</li>
+  <li class="list-group-item"><span>STDIN_ONCE</span> : {{container_config.StdinOnce}}</li>
+  <li class="list-group-item"><span>ENV</span> : {{container_config.Env}}</li>
+  <li class="list-group-item"><span>CMD</span> : {{container_config.Cmd}}</li>
+  <li class="list-group-item"><span>DNS</span> : {{container_config.Dns}}</li>
+  <li class="list-group-item"><span>IMAGE</span> : {{container_config.Image}}</li>
+  <li class="list-group-item"><span>VOLUMES</span> : 
+		{{#each container_config.Volumes}}
+			{{@key}} &nbsp &nbsp
+		{{/each}}
+  </li>
+  <li class="list-group-item"><span>VOLUMES_FROM</span> : {{container_config.VolumesFrom}}</li>
+  <li class="list-group-item"><span>WORKING_DIR</span> : {{container_config.WorkingDir}}</li>
+  <li class="list-group-item"><span>ENTRYPOINT</span> : {{container_config.EntryPoint}}</li>
+  <li class="list-group-item"><span>NETWORK_DISABLED</span> : {{container_config.NetworkDisabled}}</li>
+  <li class="list-group-item"><span>ON_BUILD</span> : {{container_config.OnBuild}}</li>
+<ul>
+</div>
+</div>

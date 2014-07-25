@@ -1,0 +1,4 @@
+gom 'github.com/codegangsta/negroni', :commit => '31b493cdec9bb18bc5a4cf20cc0b3d9b0f6d284f'
+gom 'github.com/gorilla/websocket'
+
+

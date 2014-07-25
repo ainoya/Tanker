@@ -1,0 +1,17 @@
+    <div class="input-group" style="width:250px">
+      <input type="text"  id="repo" class="form-control" placeholder="repository name" autocomplete="on" list="repository">
+      <span class="input-group-btn">
+        <button id="search" class="btn btn-primary" type="button">Go!</button>
+      </span>
+    </div><!-- /input-group --> 
+	<datalist id="repository">
+		{{#each models}}
+			<option value="{{name}}">
+		{{/each}}
+	</datalist>
+	<h1>
+        <span class="glyphicon glyphicon-cloud-upload"></span>Tags
+    </h1>
+    <div id="tags" class="table-responsive"></div>
+
+

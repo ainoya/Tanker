@@ -46,6 +46,7 @@ func main() {
 
 	dockerapi := flag.String("D", "http://localhost:5000", "location for docker registry") 
 	port := flag.String("P", ":3000", "http port")
+	flag.Parse()
 
 	//websocket setting
 	upgrader := websocket.Upgrader {

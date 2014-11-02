@@ -1,5 +1,7 @@
 # Tanker: a web viewer for docker private registry.
 
+![](https://dl.dropboxusercontent.com/u/10177896/tanker-top.png)
+
 ## Overview
 
 Web UI for docker private registry.
